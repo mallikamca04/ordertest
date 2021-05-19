@@ -1,16 +1,16 @@
-package org.orders.stepDefinitions;
+package com.mallika.stepDefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.orders.BaseLoader;
-import org.orders.pages.*;
-import org.testng.Assert;
+import com.mallika.BaseLoader;
+import com.mallika.pages.*;
+import com.testng.Assert;
 
 public class signStepDefinitions extends BaseLoader {
 
     @Given("the user is on sign in page")
-    public void place_order_payload_with() {
+    public void login() {
         HomePage homePage = new HomePage(getDriver());
         homePage.clickLogin();
     }

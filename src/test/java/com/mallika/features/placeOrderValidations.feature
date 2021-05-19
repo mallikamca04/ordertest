@@ -1,7 +1,7 @@
 Feature: Place and Validate Order
 
-  @Login
-  Scenario Outline: Verify user logged in
+  @Order
+  Scenario Outline: Verify place order
     Given the user is on sign in page
     When user provides "<email>" and "<pwd>" and clicks on Sign in button
     Then user gets logged in to Orders page
@@ -10,6 +10,6 @@ Feature: Place and Validate Order
     Then verify order placed in order History
     Examples:
       | email                   | pwd           |
-      | ramanakakarla@gmail.com | CodilityTest  |
+      | ramanakakarla@gmail.com       | CodilityTest  |
 
 
